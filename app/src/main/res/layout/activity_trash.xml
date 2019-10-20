@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.apps.juzhihua.notes.trash">
+
+    <SearchView
+        android:id="@+id/SearchView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+    </SearchView>
+
+    <RelativeLayout
+        android:id="@+id/rl_no_note_find"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/no_note_find_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/no_note_find_icon" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/no_note_find_icon"
+            android:layout_marginTop="5dp"
+            android:text="@string/no_notes_founds"
+            android:textColor="#d3d3d3"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <ViewStub
+        android:id="@+id/stub_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:inflatedId="@+id/showlayout"
+        android:layout="@layout/listview" />
+
+    <ViewStub
+        android:id="@+id/stub_grid"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:inflatedId="@+id/showlayout"
+        android:layout="@layout/gridview" />
+
+</LinearLayout>

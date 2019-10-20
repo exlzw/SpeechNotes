@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/color"
+        android:orderInCategory="100"
+        android:icon="@drawable/ic_color_lens"
+        android:title=""
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/textColor"
+        android:orderInCategory="100"
+        android:icon="@drawable/ic_text_color"
+        android:title=""
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/label"
+        android:orderInCategory="100"
+        android:icon="@drawable/ic_label_white"
+        android:title=""
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/notification"
+        android:orderInCategory="100"
+        android:icon="@drawable/ic_set_notification_white"
+        android:title=""
+        app:showAsAction="always" />
+</menu>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.apps.juzhihua.notes">
+
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="com.apps.juzhihua.notes.MainActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.apps.juzhihua.notes.favoris"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/my_favorite"
+            android:parentActivityName="com.apps.juzhihua.notes.MainActivity" />
+        <activity
+            android:name="com.apps.juzhihua.notes.notifications"
+            android:exported="true"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/notification"
+            android:parentActivityName="com.apps.juzhihua.notes.MainActivity" />
+        <activity
+            android:name="com.apps.juzhihua.notes.Labels"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/labels"
+            android:parentActivityName="com.apps.juzhihua.notes.MainActivity" />
+        <activity
+            android:name="com.apps.juzhihua.notes.trash"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/trash"
+            android:parentActivityName="com.apps.juzhihua.notes.MainActivity" />
+        <activity
+            android:name="com.apps.juzhihua.notes.settings"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/setting"
+            android:parentActivityName="com.apps.juzhihua.notes.MainActivity" />
+        <activity
+            android:name="com.apps.juzhihua.notes.Text_details"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label=""
+            android:parentActivityName="com.apps.juzhihua.notes.MainActivity" />
+        <activity
+            android:name="com.apps.juzhihua.notes.addTexteNote"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/text_note"
+            android:parentActivityName="com.apps.juzhihua.notes.MainActivity" />
+        <activity
+            android:name="com.apps.juzhihua.notes.LabelDetails"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:parentActivityName="com.apps.juzhihua.notes.Labels" />
+        <activity
+            android:name="com.apps.juzhihua.notes.Trash_Details"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="Trash Details"
+            android:parentActivityName="com.apps.juzhihua.notes.trash" />
+        <activity
+            android:name="com.apps.juzhihua.notes.addVoiceNote"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/voice_note"
+            android:parentActivityName="com.apps.juzhihua.notes.MainActivity" />
+        <activity
+            android:name="com.apps.juzhihua.notes.Voice_details"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label=""
+            android:parentActivityName="com.apps.juzhihua.notes.MainActivity" />
+        <activity
+            android:name="com.apps.juzhihua.notes.addListNote"
+            android:label="@string/list_note"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:parentActivityName="com.apps.juzhihua.notes.MainActivity" />
+        <activity android:name="com.apps.juzhihua.notes.List_details"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label=""
+            android:parentActivityName="com.apps.juzhihua.notes.MainActivity">
+
+        </activity>
+
+        <receiver android:name="com.apps.juzhihua.notes.AlarmReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.tester.alarmmanager">
+
+                </action>
+            </intent-filter>
+        </receiver>
+
+    </application>
+
+</manifest>

@@ -1,0 +1,88 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="@dimen/activity_vertical_margin">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:paddingLeft="@dimen/fab_margin"
+            android:text="@string/add_notification"
+            android:textColor="#1B87E1"
+            android:textSize="18dip"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/in_date"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:editable="false"
+                android:hint="@string/choose_date_here" />
+
+            <ImageView
+                android:id="@+id/btn_date"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignBottom="@+id/in_date"
+                android:layout_toEndOf="@+id/in_date"
+                android:layout_toRightOf="@+id/in_date"
+                android:src="@drawable/ic_date" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/in_time"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/in_date"
+                android:editable="false"
+                android:hint="@string/choose_time_here" />
+
+            <ImageView
+                android:id="@+id/btn_time"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignBottom="@+id/in_time"
+                android:layout_toEndOf="@+id/in_time"
+                android:layout_toRightOf="@+id/in_time"
+                android:src="@drawable/ic_time" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/DateTime_ok"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/fab_margin"
+            android:background="#EEEEEE"
+            android:gravity="center"
+            android:text="@string/ok"
+            android:textAlignment="center"
+            android:textColor="#1B87E1"
+            android:textSize="18dip"
+            android:textStyle="bold" />
+    </LinearLayout>
+</RelativeLayout>

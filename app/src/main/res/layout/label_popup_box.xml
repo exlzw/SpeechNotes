@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="15dip">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:paddingLeft="@dimen/fab_margin"
+            android:text="@string/add_new_label"
+            android:textColor="#1B87E1"
+            android:textSize="18dip"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/LL1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:id="@+id/RelativeLayout01"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/fab_margin"
+                android:layout_marginRight="@dimen/fab_margin">
+
+                <ImageView
+                    android:id="@+id/label_add_btn"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/ic_check_add" />
+
+                <EditText
+                    android:id="@+id/label_text"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_toLeftOf="@id/label_add_btn"
+                    android:hint="@string/add_your_new_label"
+                    android:inputType="text"
+                    android:maxLines="1" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="@dimen/fab_margin"
+            android:layout_marginRight="@dimen/fab_margin"
+            android:layout_marginTop="10dp"
+            android:drawSelectorOnTop="true"
+            android:spinnerMode="dialog">
+
+        </Spinner>
+
+        <Button
+            android:id="@+id/Label_ok"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/fab_margin"
+            android:background="#EEEEEE"
+            android:gravity="center"
+            android:text="@string/ok"
+            android:textAlignment="center"
+            android:textColor="#1B87E1"
+            android:textSize="18dip"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/all"
+            android:icon="@drawable/ic_home"
+            android:title="@string/all_note"
+            app:actionViewClass="android.widget.TextView"/>
+        <item
+            android:id="@+id/favoris"
+            android:icon="@drawable/ic_star"
+            android:title="@string/my_favorite"
+            app:actionViewClass="android.widget.TextView"/>
+        <item
+            android:id="@+id/notifications"
+            android:icon="@drawable/ic_alarm"
+            android:title="@string/notification"
+            app:actionViewClass="android.widget.TextView"/>
+        <item
+            android:id="@+id/trash"
+            android:icon="@drawable/ic_trash"
+            android:title="@string/trash"
+            app:actionViewClass="android.widget.TextView"/>
+        <item
+            android:id="@+id/label"
+            android:icon="@drawable/ic_label"
+            android:title="@string/labels"
+            app:actionViewClass="android.widget.TextView" />
+        <item
+            android:id="@+id/settings"
+            android:icon="@drawable/ic_settings"
+            android:title="@string/setting"
+            app:actionViewClass="android.widget.TextView"/>
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/share"
+                android:icon="@drawable/ic_share"
+                android:title="@string/share" />
+            <item
+                android:id="@+id/about"
+                android:icon="@drawable/ic_about"
+                android:title="@string/about" />
+        </menu>
+    </item>
+
+</menu>

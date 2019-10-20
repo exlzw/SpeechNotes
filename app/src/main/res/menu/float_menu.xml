@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+    <item
+        android:id="@+id/add_voice"
+        android:orderInCategory="100"
+        android:icon="@drawable/ic_mic"
+        android:title="@string/float_voice" />
+    <item
+        android:id="@+id/add_list"
+        android:orderInCategory="100"
+        android:icon="@drawable/ic_list"
+        android:title="@string/float_list" />
+    <item
+        android:id="@+id/add_text"
+        android:orderInCategory="100"
+        android:title="@string/float_text"
+        android:icon="@drawable/ic_text" />
+</menu>
